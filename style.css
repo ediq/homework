@@ -1,0 +1,47 @@
+
+.conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start; /* выравнивание вдоль главной оси */
+  align-content: center; /* выравнивание рядов вдоль поперечной оси */
+  align-items: baseline; /* выравнивание елемента внутри каждого ряда поперек главной оси*/
+
+  margin-bottom: 10px;
+  height: 140px;
+  border: 3px solid red;
+}
+/* Гайд по Flex 'https://css-tricks.com/snippets/css/a-guide-to-flexbox/' */
+
+.box {
+  margin: 5px;
+  padding: 5px 5px;
+  flex-basis: 10px;
+  border: 3px solid blue;
+  background-color: yellow;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.box-3 {
+  align-self: flex-start; /* Персональное выравнивание для блока */
+  flex-grow: 3;
+}
+
+
+.conteiner2 {
+  display: flex;
+  height: 200px;
+  border: 3px solid rgb(235, 84, 255);
+  margin-bottom: 10px;
+}
+
+.box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 200px;
+  background-color: rgb(173, 250, 128);
+}
